@@ -1,0 +1,55 @@
+Split Summary: 270 train volumes, 15 eval volumes, 15 test volumes
+c: torch.Size([8, 2, 64, 64, 64]) x: torch.Size([8, 1, 64, 64, 64])
+CUDA available: True
+GPU: NVIDIA A100 80GB PCIe
+Using device: cuda
+Epoch 001 | time 2073.7s | beta 0.100
+TRAIN | loss 0.00071680 | recon 0.00067690 | kl 0.00039901 | psnr 33.476 | ssim 0.9381
+VAL   | loss 0.00025925 | recon 0.00025917 | kl 0.00000077 | psnr 37.323 | ssim 0.9752
+BEST  | val psnr 37.323 | val ssim 0.9752 | train psnr 33.476 | train ssim 0.9381
+Epoch 002 | time 2079.7s | beta 0.200
+TRAIN | loss 0.00036863 | recon 0.00036855 | kl 0.00000041 | psnr 35.419 | ssim 0.9586
+VAL   | loss 0.00021356 | recon 0.00021347 | kl 0.00000044 | psnr 38.095 | ssim 0.9773
+BEST  | val psnr 38.095 | val ssim 0.9773 | train psnr 35.419 | train ssim 0.9586
+Epoch 003 | time 2082.5s | beta 0.300
+TRAIN | loss 0.00034796 | recon 0.00034783 | kl 0.00000043 | psnr 35.741 | ssim 0.9604
+VAL   | loss 0.00021377 | recon 0.00021368 | kl 0.00000033 | psnr 37.868 | ssim 0.9767
+BEST  | val psnr 38.095 | val ssim 0.9773 | train psnr 35.419 | train ssim 0.9586
+Epoch 004 | time 2079.0s | beta 0.400
+TRAIN | loss 0.00033688 | recon 0.00033672 | kl 0.00000040 | psnr 35.922 | ssim 0.9614
+VAL   | loss 0.00020695 | recon 0.00020666 | kl 0.00000073 | psnr 38.430 | ssim 0.9784
+BEST  | val psnr 38.430 | val ssim 0.9784 | train psnr 35.922 | train ssim 0.9614
+Epoch 005 | time 2073.8s | beta 0.500
+TRAIN | loss 0.00032571 | recon 0.00032558 | kl 0.00000025 | psnr 36.100 | ssim 0.9623
+VAL   | loss 0.00019702 | recon 0.00019696 | kl 0.00000013 | psnr 38.927 | ssim 0.9797
+BEST  | val psnr 38.927 | val ssim 0.9797 | train psnr 36.100 | train ssim 0.9623
+Epoch 006 | time 2070.8s | beta 0.500
+TRAIN | loss 0.00032218 | recon 0.00032208 | kl 0.00000020 | psnr 36.178 | ssim 0.9627
+VAL   | loss 0.00021277 | recon 0.00021271 | kl 0.00000013 | psnr 37.618 | ssim 0.9746
+BEST  | val psnr 38.927 | val ssim 0.9797 | train psnr 36.100 | train ssim 0.9623
+Epoch 007 | time 2073.4s | beta 0.500
+TRAIN | loss 0.00031858 | recon 0.00031847 | kl 0.00000022 | psnr 36.244 | ssim 0.9629
+VAL   | loss 0.00018510 | recon 0.00018503 | kl 0.00000015 | psnr 39.372 | ssim 0.9811
+BEST  | val psnr 39.372 | val ssim 0.9811 | train psnr 36.244 | train ssim 0.9629
+Epoch 008 | time 2069.2s | beta 0.500
+TRAIN | loss 0.00031499 | recon 0.00031489 | kl 0.00000019 | psnr 36.306 | ssim 0.9633
+VAL   | loss 0.00018612 | recon 0.00018603 | kl 0.00000019 | psnr 39.072 | ssim 0.9808
+BEST  | val psnr 39.372 | val ssim 0.9811 | train psnr 36.244 | train ssim 0.9629
+Epoch 009 | time 2078.8s | beta 0.500
+TRAIN | loss 0.00031359 | recon 0.00031348 | kl 0.00000024 | psnr 36.343 | ssim 0.9635
+VAL   | loss 0.00018210 | recon 0.00018202 | kl 0.00000015 | psnr 39.318 | ssim 0.9814
+BEST  | val psnr 39.318 | val ssim 0.9814 | train psnr 36.343 | train ssim 0.9635
+Epoch 010 | time 2068.6s | beta 0.500
+TRAIN | loss 0.00031167 | recon 0.00031154 | kl 0.00000026 | psnr 36.379 | ssim 0.9637
+VAL   | loss 0.00018421 | recon 0.00018415 | kl 0.00000012 | psnr 39.148 | ssim 0.9812
+BEST  | val psnr 39.318 | val ssim 0.9814 | train psnr 36.343 | train ssim 0.9635
+Done. x_hat shape: torch.Size([4, 1, 64, 64, 64])
+Using device: cuda
+GPU: NVIDIA A100 80GB PCIe
+Split Summary: 270 train volumes, 15 eval volumes, 15 test volumes
+Loaded checkpoint: checkpoints/run_304964_0/best.pt
+Checkpoint epoch: 9 | val_loss: 0.0001820950441586506
+Test config: seed=42 sampling_rate=0.6 beta=0.5 recon=mse
+TEST | loss 0.000187 | recon 0.000187 | kl -0.000000 | psnr 39.251 | ssim 0.9816 | n=12480
+Saving 20 comparisons to: image_comparison/run_304964_0
+Done saving comparisons.
